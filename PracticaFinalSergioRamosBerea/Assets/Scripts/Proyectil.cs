@@ -6,7 +6,8 @@ public class Proyectil : MonoBehaviour
 {
     public float speed = 10;
     private string playerTag = "Player";
-    private string worldTag = "World";
+    
+    
 
     private void Update()
     {
@@ -19,9 +20,6 @@ public class Proyectil : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        if (collision.gameObject.CompareTag(worldTag))
-        {
-            FindObjectOfType<LevelManager>();
-        }
+      
     }
 }

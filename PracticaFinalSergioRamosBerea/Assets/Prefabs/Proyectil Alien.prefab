@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 2275031763566915377}
   - component: {fileID: 8736621392694302070}
   - component: {fileID: 1965321794719440369}
-  - component: {fileID: 6504924665481195155}
   - component: {fileID: 3744937550055250602}
+  - component: {fileID: 3992045235225088018}
   m_Layer: 0
-  m_Name: Proyectil
+  m_Name: Proyectil Alien
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 812159848946078851}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 7.0869575, y: -0.019541651, z: 0}
-  m_LocalScale: {x: 33, y: 33, z: 33}
+  m_LocalScale: {x: 15, y: 15, z: 15}
   m_Children:
   - {fileID: 8700367913560948951}
   m_Father: {fileID: 0}
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: dd23a68e4d578b0419c73c4ded25c296, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7d6cdaa8c2c58594e8b982cb9bd73cd9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -98,33 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54401d07f36d9c14a8ec9e0019b2ce97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 70
---- !u!61 &6504924665481195155
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 812159848946078851}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.0181396, y: 0.17232531}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 6, y: 6}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 5.6799884, y: 2.142788}
-  m_EdgeRadius: 0
+  speed: 90
 --- !u!50 &3744937550055250602
 Rigidbody2D:
   serializedVersion: 4
@@ -146,6 +120,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!70 &3992045235225088018
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812159848946078851}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 6.04, y: 7.16}
+  m_Direction: 0
 --- !u!1 &3336429197248507685
 GameObject:
   m_ObjectHideFlags: 0

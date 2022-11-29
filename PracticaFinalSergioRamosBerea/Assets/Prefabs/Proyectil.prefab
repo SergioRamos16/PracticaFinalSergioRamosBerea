@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2415867553970920686}
   m_Layer: 0
   m_Name: Proyectil
-  m_TagString: Untagged
+  m_TagString: Nave
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -142,7 +142,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -161,7 +161,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxHealth: 1
-  healthBar: {fileID: 95212315403806560}
+  enemyCollider: {fileID: 6504924665481195155}
+  timeToDie: 10
+  gameObject: {fileID: 812159848946078851}
 --- !u!1 &3336429197248507685
 GameObject:
   m_ObjectHideFlags: 0

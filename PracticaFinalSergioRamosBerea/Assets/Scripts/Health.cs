@@ -6,25 +6,17 @@ using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
-    public int MaxHealth = 1;
+    public int MaxHealth = 3;
     private int currentHealth;
 
     private Vector3 InitialPosition;
 
-    public Image healthBar;
-
     public object NaveAlien;
-
-    public void UpdateHealtBar()
-    {
-        healthBar.fillAmount = Mathf.InverseLerp(0, MaxHealth, currentHealth);
-    }
 
     private void Start()
     {
         InitialPosition = transform.position;
         currentHealth = MaxHealth;
-        UpdateHealtBar();
     }
 
     public void TakeDamage(int damageTaken)
@@ -41,7 +33,6 @@ public class Health : MonoBehaviour
         {
             Debug.Log("me han echo daño, salud restante " + currentHealth);
         }
-        UpdateHealtBar();
     }
 
     public virtual void Die()

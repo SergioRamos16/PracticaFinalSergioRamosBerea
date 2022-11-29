@@ -4,8 +4,16 @@ using UnityEngine;
 
 public class EnemyHealth : Health
 {
-	public override void Die()
-	{
-		Destroy(gameObject);
-	}
+    public Collider2D enemyCollider;
+    public GameObject gameObject;
+
+    private void Awake()
+    {
+        enemyCollider = GetComponent<Collider2D>();
+    }
+
+    public override void Die()
+    {
+        Destroy(gameObject);
+    }
 }

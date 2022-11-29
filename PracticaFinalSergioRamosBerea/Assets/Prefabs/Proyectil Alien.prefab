@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 1965321794719440369}
   - component: {fileID: 3744937550055250602}
   - component: {fileID: 3992045235225088018}
+  - component: {fileID: -4089322929310348402}
   m_Layer: 0
   m_Name: Proyectil Alien
-  m_TagString: Untagged
+  m_TagString: Alien
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -114,7 +115,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -136,6 +137,22 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 6.04, y: 7.16}
   m_Direction: 0
+--- !u!114 &-4089322929310348402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812159848946078851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c68eac4313a32aa4c82b7b43f3e032c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxHealth: 3
+  enemyCollider: {fileID: 3992045235225088018}
+  timeToDie: 10
+  gameObject: {fileID: 812159848946078851}
 --- !u!1 &3336429197248507685
 GameObject:
   m_ObjectHideFlags: 0

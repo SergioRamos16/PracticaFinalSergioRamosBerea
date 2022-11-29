@@ -7,6 +7,7 @@ public class ClickNave : MonoBehaviour
 {
     public int currentNumberOfPoints;
     public Text pointText;
+    public int damageDealt = 1;
 
     private void Update()
     {
@@ -18,6 +19,26 @@ public class ClickNave : MonoBehaviour
             if (hit)
             {
                 Debug.Log("Has disparado a la nave");
+                string hitTag = hit.collider.gameObject.tag;
+                switch (hitTag)
+                {
+                    case "Alien":
+                        GetPoints(1);
+                        break;
+
+                    case "Nave":
+                        GetPoints(1);
+                        break;
+
+                    default:
+                        break;
+                }
+
+                Health health = hit.collider.gameObject.GetComponent<Health>();
+                if (health != null)
+                {
+                    health.TakeDamage(damageDealt);
+                }
             }
         }
     }

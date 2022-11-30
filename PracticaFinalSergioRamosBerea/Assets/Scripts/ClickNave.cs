@@ -19,6 +19,7 @@ public class ClickNave : MonoBehaviour
             if (hit)
             {
                 Debug.Log("Has disparado a la nave");
+
                 string hitTag = hit.collider.gameObject.tag;
                 switch (hitTag)
                 {
@@ -33,7 +34,6 @@ public class ClickNave : MonoBehaviour
                     default:
                         break;
                 }
-
                 Health health = hit.collider.gameObject.GetComponent<Health>();
                 if (health != null)
                 {

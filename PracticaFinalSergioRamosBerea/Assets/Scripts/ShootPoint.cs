@@ -20,5 +20,6 @@ public class ShootPoint : MonoBehaviour
             timeSinceLastShoot = 0;
             Instantiate(bulletPrefab, shootPointPosition[rand].position, shootPointPosition[rand].rotation);
         }
+
     }
 }

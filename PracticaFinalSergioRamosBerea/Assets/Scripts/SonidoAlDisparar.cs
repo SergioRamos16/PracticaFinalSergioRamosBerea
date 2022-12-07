@@ -6,7 +6,9 @@ using UnityEngine.UI;
 
 public class SonidoAlDisparar : MonoBehaviour
 {
+    
     public AudioSource auidoDisparo;
+
     
     
     private void OnMouseDown()

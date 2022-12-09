@@ -8,7 +8,7 @@ public class ScripTimer : MonoBehaviour
 {
     public Text contador;
     public Button botonReinicio;
-    private float tiempo = 5f;
+    private float tiempo = 200f;
     public GameObject ShootPoints;
     public GameObject ShootPoints2;
     public GameObject ShootPoints3;
@@ -44,7 +44,7 @@ public class ScripTimer : MonoBehaviour
     //public void NextSceneLoad()
 
     //{
-    //    if (contador = "170")
+    //    if (contador = 170f)
     //    {
     //        SceneManager.LoadScene("Winner");
     //    }

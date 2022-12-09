@@ -6,13 +6,19 @@ using UnityEngine.UI;
 
 public class SonidoAlDisparar : MonoBehaviour
 {
+    public AudioSource audioDisparo;
     
-    public AudioSource auidoDisparo;
 
-    
-    
-    private void OnMouseDown()
+  void Start() 
+  {
+     audioDisparo.Stop();
+  }
+  void Update() 
+  {
+    if (Input.GetKeyDown(KeyCode.Mouse0))
     {
-        auidoDisparo.Play();
+        audioDisparo.Play();
     }
+    
+  }
 }

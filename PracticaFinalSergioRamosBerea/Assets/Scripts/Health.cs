@@ -11,8 +11,6 @@ public class Health : MonoBehaviour
 
     private Vector3 InitialPosition;
 
-    public object NaveAlien;
-
     private void Start()
     {
         InitialPosition = transform.position;

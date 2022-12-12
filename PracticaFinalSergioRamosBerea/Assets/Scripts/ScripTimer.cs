@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class ScripTimer : MonoBehaviour
 {
     public Text contador;
-    private float tiempo = 10f;
+    private float tiempo = 60f;
 
     //public Button botonReinicio;
 

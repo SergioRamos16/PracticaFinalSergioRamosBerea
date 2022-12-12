@@ -1369,7 +1369,7 @@ MonoBehaviour:
   currentNumberOfPoints: 0
   pointText: {fileID: 1631223196}
   damageDealt: 1
-  PuntosObjetivo: 10
+  PuntosObjetivo: 150
 --- !u!4 &1741160312
 Transform:
   m_ObjectHideFlags: 0

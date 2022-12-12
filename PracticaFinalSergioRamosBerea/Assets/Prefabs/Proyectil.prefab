@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 6504924665481195155}
   - component: {fileID: 3744937550055250602}
   - component: {fileID: 2415867553970920686}
-  - component: {fileID: 4275226942251989158}
   m_Layer: 0
   m_Name: Proyectil
   m_TagString: Nave
@@ -164,20 +163,6 @@ MonoBehaviour:
   MaxHealth: 1
   enemyCollider: {fileID: 6504924665481195155}
   gameObject: {fileID: 812159848946078851}
---- !u!114 &4275226942251989158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 812159848946078851}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b5119ac64d78984a9a009426154b285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sonidoAlMorir: {fileID: 0}
-  myAudio: {fileID: 8300000, guid: da46e85c1a0eef745bcd91a6bff1a92d, type: 3}
 --- !u!1 &3336429197248507685
 GameObject:
   m_ObjectHideFlags: 0

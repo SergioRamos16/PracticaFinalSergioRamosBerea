@@ -248,10 +248,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   contador: {fileID: 1573519407}
-  botonReinicio: {fileID: 354505411}
-  ShootPoints: {fileID: 1986407411}
-  ShootPoints2: {fileID: 1242616014}
-  ShootPoints3: {fileID: 23293334}
 --- !u!4 &112239274
 Transform:
   m_ObjectHideFlags: 0
@@ -1373,6 +1369,7 @@ MonoBehaviour:
   currentNumberOfPoints: 0
   pointText: {fileID: 1631223196}
   damageDealt: 1
+  PuntosObjetivo: 10
 --- !u!4 &1741160312
 Transform:
   m_ObjectHideFlags: 0

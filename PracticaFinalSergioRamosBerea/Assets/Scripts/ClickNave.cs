@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ClickNave : MonoBehaviour
 {
@@ -43,6 +44,8 @@ public class ClickNave : MonoBehaviour
         }
     }
 
+    public int PuntosObjetivo = 180;
+
     public void GetPoints(int pointAmount)
     {
         pointText.text = currentNumberOfPoints.ToString();
@@ -57,6 +60,11 @@ public class ClickNave : MonoBehaviour
         {
             Debug.Log("Has destruido una nave, tienes " + currentNumberOfPoints + " puntos.");
             pointText.text = currentNumberOfPoints.ToString();
+        }
+
+        if (currentNumberOfPoints >= PuntosObjetivo)
+        {
+            SceneManager.LoadScene("Winner");
         }
     }
 }

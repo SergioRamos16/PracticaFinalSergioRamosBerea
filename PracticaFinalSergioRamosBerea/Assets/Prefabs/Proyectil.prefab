@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6504924665481195155}
   - component: {fileID: 3744937550055250602}
   - component: {fileID: 2415867553970920686}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Proyectil
   m_TagString: Nave
   m_Icon: {fileID: 0}
@@ -147,7 +147,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &2415867553970920686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,7 +173,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8700367913560948951}
   - component: {fileID: 4986311423266814040}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -257,7 +257,7 @@ GameObject:
   - component: {fileID: 9027921655886822533}
   - component: {fileID: 6948007757111254536}
   - component: {fileID: 200744844994768919}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}

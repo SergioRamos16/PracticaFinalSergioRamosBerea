@@ -212,7 +212,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dd65d04f0484704e87f4b792b6674bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 812159848946078851, guid: 0ed4303a4d8e1f843aa571293aa9d63e, type: 3}
+  bulletPrefab:
+  - {fileID: 812159848946078851, guid: ba6df754b053dd54ea7632a8049d9f74, type: 3}
+  - {fileID: 812159848946078851, guid: 0ed4303a4d8e1f843aa571293aa9d63e, type: 3}
   shootPointPosition:
   - {fileID: 835109226}
   - {fileID: 1803141049}
@@ -1091,7 +1093,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dd65d04f0484704e87f4b792b6674bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 812159848946078851, guid: ba6df754b053dd54ea7632a8049d9f74, type: 3}
+  bulletPrefab:
+  - {fileID: 812159848946078851, guid: 0ed4303a4d8e1f843aa571293aa9d63e, type: 3}
+  - {fileID: 812159848946078851, guid: ba6df754b053dd54ea7632a8049d9f74, type: 3}
   shootPointPosition:
   - {fileID: 420463313}
   - {fileID: 1880054677}
@@ -1473,7 +1477,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dd65d04f0484704e87f4b792b6674bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 812159848946078851, guid: ba6df754b053dd54ea7632a8049d9f74, type: 3}
+  bulletPrefab:
+  - {fileID: 812159848946078851, guid: ba6df754b053dd54ea7632a8049d9f74, type: 3}
+  - {fileID: 812159848946078851, guid: 0ed4303a4d8e1f843aa571293aa9d63e, type: 3}
   shootPointPosition:
   - {fileID: 1182628187}
   - {fileID: 2076634523}

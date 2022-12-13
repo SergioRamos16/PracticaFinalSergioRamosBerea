@@ -6,35 +6,31 @@ using UnityEngine.SceneManagement;
 
 public class ShootPoint : MonoBehaviour
 {
-    public GameObject bulletPrefab;
+    public GameObject[] bulletPrefab;
     public Transform[] shootPointPosition;
     public float tiempoParaApagarse = 4f;
-   
+
     public float timeBerweenShoots = 4;
     private float timeSinceLastShoot = 0;
-   
+
     private void Update()
     {
         timeSinceLastShoot += Time.deltaTime;
         if (timeSinceLastShoot > timeBerweenShoots)
         {
             int rand = Random.Range(0, shootPointPosition.Length);
+            int randPref = Random.Range(0, bulletPrefab.Length);
 
             timeSinceLastShoot = 0;
-            Instantiate(bulletPrefab, shootPointPosition[rand].position, shootPointPosition[rand].rotation);
+            Instantiate(bulletPrefab[randPref], shootPointPosition[rand].position, shootPointPosition[rand].rotation);
         }
     }
-    
-    void TiempoParaApagarse() 
+
+    private void TiempoParaApagarse()
     {
         if (tiempoParaApagarse < 0)
         {
-            bulletPrefab.SetActive(false);
+            bulletPrefab[bulletPrefab.Length].SetActive(false);
         }
     }
-   
-
-
-
-   
 }
